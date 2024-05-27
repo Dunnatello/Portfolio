@@ -1,0 +1,325 @@
+html {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+    background-color: #212529;
+}
+body {
+    color: #fff;
+    background-color: #282526;
+    margin: 0;
+    padding: 0;
+}
+
+.dropShadowDiv {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(10px 10px 10px rgba( 0, 0, 0, 0.4 ));
+    margin: 25px;
+}
+.dropShadowDiv video {
+    margin: 10px;
+}
+
+.circleCrop {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.circleCrop:hover {
+    transform: scale(1.05)
+}
+
+.navbar-brand, .nav-link {
+    transition: transform 0.3s ease;
+}
+.navbar-brand:hover, .nav-link:hover {
+    transform: scale(1.1)
+}
+.smallProfileCrop {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 15%;
+    filter: drop-shadow(0px 5px 5px rgba( 0, 0, 0, 0.4 ));
+    transition: transform 0.3s ease;
+}
+
+.smallProfileCrop:hover {
+    transform: scale(1.2);
+}
+
+.smallProfileCrop img {
+    width: 100%;
+    height: auto;
+}
+
+.circleCrop img {
+    width: 100%;
+    height: auto;
+}
+
+
+table {
+    border-collapse: separate;
+    border-spacing: 0.75em;
+}
+
+.grayTableElement {
+    border-radius: 15px;
+    background-color: #545353;
+    text-align: center;
+    margin-bottom: 50px;
+    filter: drop-shadow(5px 5px 5px rgba( 0, 0, 0, 0.4 ));
+}
+
+.darkgrayTableElement {
+    border-radius: 15px;
+    background-color: #423e40;
+    text-align: center;
+    margin-bottom: 50px;
+    filter: drop-shadow(5px 5px 5px rgba( 0, 0, 0, 0.4 ));
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.containerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    padding: 50px;
+    width: Calc( 100vw - 8px ); /* Used to fix Chromium browsers from creating a horizontal scroll bar.*/
+    margin-left: calc(-50vw + 50%);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #fff;
+    filter: drop-shadow(0px 15px 15px rgba( 0, 0, 0, 0.4 ));
+    margin-bottom: 25px;
+
+    overflow: hidden;
+
+}
+
+.circuitBackground {
+    background-image: url("../images/Circuit.png");
+}
+
+/* Revert Width Changes For Firefox Browsers */
+@-moz-document url-prefix() {
+    .containerDiv {
+        width: 100vw;
+    }
+
+}
+
+.blackTransparentBackground {
+    color: #fff;
+    filter: drop-shadow(15px 15px 15px rgba( 0, 0, 0, 0.4 ));
+    background: rgba( 0, 0, 0, 0.5 );
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.button {
+    float: left;
+    background-color: inherit;
+    border: none;
+    color: white;
+    margin: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    border-radius: 15px;
+    filter: drop-shadow(5px 5px 5px rgba( 0, 0, 0, 0.4 ));
+    transition: background-color 0.3s ease;
+    user-select: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button:active {
+    background-color: aqua;
+    color: inherit;
+}
+
+.buttonList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.buttonLink:hover {
+    color: lightgray;
+}
+
+.videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    z-index: -1;
+    opacity: 1;
+
+    pointer-events: none;
+}
+
+.socialMediaIcon {
+    width: 30px;
+    height: auto;
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+.visionsBackground {
+    background-image: url( '../images/Visions Garden.png' );
+}
+
+.burnItUpBackground {
+    background-attachment: revert;
+    background-image: url( '../images/BurnItUpWebsiteGraphic.png' );
+    background-position-x: 75%;
+}
+
+.projectElement {
+    padding: 25px 0 25px 0;
+}
+
+u1 {
+    list-style-position: inside;
+}
+
+/* Navbar Functionality */
+
+/*
+    
+    For Responsive Layout on Desktop/Mobile
+*/
+
+/*
+    Mobile Layout
+*/
+.demoVideo {
+    width: 90vw;
+    height: auto;
+}
+.dropShadowDiv {
+    flex-wrap: wrap;
+}
+
+.buttonList {
+    flex-wrap: wrap;
+}
+
+.projectElement img {
+    width: 90vw;
+}
+
+.circleCrop, circleCrop img {
+    width: 50vw;
+    height: 50vw;
+}
+
+/*
+    Desktop Layout
+*/
+@media (min-width: 768px) {
+
+    .circleCrop, circleCrop img { 
+        width: 300px;
+        height: 300px;
+    }
+
+    .projectElement img {
+        width: 40vw;
+    }
+
+    .demoVideo {
+        width: 30vw;
+        height: auto;
+    }
+
+    .dropShadowDiv {
+        flex-wrap: nowrap;
+    }
+
+    .buttonList {
+        flex-wrap: nowrap;
+        margin-bottom: 25px;
+    }
+
+}
