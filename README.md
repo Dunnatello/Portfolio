@@ -13,3 +13,4 @@ After overcoming the challenges faced in that project, I converted the ASP.NET C
 
 ## Technical Details
 This website uses only HTML/CSS and is currently hosted on Microsoft Azure Cloud platform as a Static Web App.
+The base CSS styling comes from the Bootstrap library with some additional CSS used for displaying my portfolio content.
