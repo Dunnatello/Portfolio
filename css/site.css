@@ -35,6 +35,7 @@ body {
     filter: drop-shadow(10px 10px 10px rgba( 0, 0, 0, 0.4 ));
     margin: 25px;
 }
+
 .dropShadowDiv video {
     margin: 10px;
 }
@@ -294,6 +295,11 @@ u1 {
     height: 50vw;
 }
 
+.projectDiv {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
 /*
     Desktop Layout
 */
@@ -319,7 +325,7 @@ u1 {
 
     .buttonList {
         flex-wrap: nowrap;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
 
 }
