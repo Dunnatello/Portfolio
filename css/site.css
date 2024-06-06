@@ -357,7 +357,7 @@ u1 {
 
 .indexContainer {
     flex-wrap: wrap;
-
+    width: 100vw;
 }
 
 .indexContainer video {
@@ -393,7 +393,7 @@ u1 {
     .indexContainerItem {
         width: 50%;
         height: 500px;
-        padding: 25px;
+        padding: 0px;
     }
 
     .videoDiv {
