@@ -6,6 +6,10 @@ I created this website project to improve my web development skills and display 
 
 Feel free to check out how I implemented my portfolio website!
 
+
+<p align="center"><img src="/GitHub Readme Data/Portfolio Website.png" style="width: 90%" /></p>
+<p align="center"><b>Figure 1:</b> The home page features multiple containers that allow the user to visit the 'Projects' or 'About' pages.</p>
+
 ## Lessons Learned
 This project is a direct result of lessons learned from my ASP.NET Core website implementation found [here](https://github.com/Dunnatello/DotNetPortfolioWebsite).  
 
