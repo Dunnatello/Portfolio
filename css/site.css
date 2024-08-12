@@ -22,7 +22,7 @@ html {
 }
 body {
     color: #fff;
-    background-color: #282526;
+    background-color: #181616;
     margin: 0;
     padding: 0;
 }
@@ -70,6 +70,14 @@ body {
 }
 .navbar-brand:hover, .nav-link:hover {
     transform: scale(1.1)
+}
+
+.navbar-background {
+    background: rgb(226,56,43);
+    background: linear-gradient(315deg, rgba(226,56,43,1) 0%, rgba(8,58,228,1) 100%); 
+}
+.nav-link {
+    font-size: 20px;
 }
 .smallProfileCrop {
     margin: 10px;
