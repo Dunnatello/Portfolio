@@ -1,0 +1,115 @@
+.project-header {
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-title {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #2196f3, #00fffa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.project-subtitle {
+    font-size: 1.5rem;
+    color: #e0e7ff;
+    margin-bottom: 2rem;
+}
+
+.project-logo {
+    max-width: 250px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.content-section {
+    background: var(--card-background);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-section p {
+    margin-bottom: 10px;
+}
+
+.media-container {
+    background: rgba(31, 41, 55, 0.8);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.media-container img,
+.media-container video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.media-caption {
+    text-align: center;
+    color: #9ca3af;
+    font-style: italic;
+}
+
+.team-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.team-member {
+    background: rgba(31, 41, 55, 0.8);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.team-member img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.team-member-info {
+    flex: 1;
+}
+
+.team-member-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.team-member-role {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.button {
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .project-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+}

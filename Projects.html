@@ -3,191 +3,109 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Dunnatello</title>
-
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>Projects - Dunnatello</title>
     <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/projects.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-dark navbar-background border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img class="smallProfileCrop" src="images/Dunnatello Icon.png" style="width: 40px; height: 40px;border-radius: 25px;margin:0 10px 0 0;" /> Dunnatello
-                </a>
-
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="Projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="About.html">About</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Dunnatello Icon.png" alt="Dunnatello" />
+                Dunnatello
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Projects.html">Projects</a>
+                <a href="About.html">About</a>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <div class="container">
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">🚀 Projects</h1>
 
-        <h1 align="center">🚀 Projects</h1>
-
-        <div class="containerDiv">
-
-            <video autoplay muted loop class="videoBackground" style="height: 101%;">
-                <source src="videos/Occlusion Culling.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <h2 class="blackTransparentBackground">XR Training Simulation for Teacher Education</h2>
-            <div class="dropShadowDiv">
-                <img src="images/XRSimulationLogo.png" style="width: 256px;">
-            </div>
-            <div class="blackTransparentBackground">
-                <div class="buttonList">
-                    <div class="button" style="background: rgb(33,150,243); background: linear-gradient(315deg, rgba(33,150,243,1) 0%, rgba(0,255,250,1) 100%);">
-                        <a href="Projects/XRSimulation.html" class="buttonLink"><span>📃 Details</span></a>
+            <!-- XR Training Simulation -->
+            <div class="project-card">
+                <video autoplay muted loop class="project-video">
+                    <source src="videos/Occlusion Culling.mp4" type="video/mp4">
+                </video>
+                <div class="project-content">
+                    <h2 class="project-title">XR Training Simulation for Teacher Education</h2>
+                    <img src="images/XRSimulationLogo.png" alt="XR Simulation" class="project-logo">
+                    <p class="project-description">A classroom de-escalation training simulation software designed for my senior capstone project. 
+                        This project features advanced animation systems and complex narrative design.</p>
+                    <div class="project-links">
+                        <a href="Projects/XRSimulation.html" class="button">📃 Details</a>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-        <div class="projectElement">
-
-            <div class="dropShadowDiv">
-                <img class="projectDiv" src="images/XRSimulation Graph.png" width="750">
-            </div>
-
-            <p><i>XR Training Simulation for Teacher Education</i> is a classroom de-escalation training simulation software designed by myself and my other group members for our senior capstone project. This project features advanced animation systems and complex narrative design.</p>
-
-        </div>
-
-
-        <div class="containerDiv">
-
-            <video autoplay muted loop class="videoBackground" style="height: 101%;">
-                <source src="videos/Tropical Tac Toe.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <h2 class="blackTransparentBackground">Tropical Tac Toe</h2>
-            <div style="height:400px"></div>
-            <div class="blackTransparentBackground">
-                <div class="buttonList">
-                    <div class="button" style="background: rgb(33,150,243); background: linear-gradient(315deg, rgba(33,150,243,1) 0%, rgba(0,255,250,1) 100%);">
-                        <a href="https://github.com/Dunnatello/TropicalTacToe" class="buttonLink"><span>🤖 Repository</span></a>
+            <!-- Tropical Tac Toe -->
+            <div class="project-card">
+                <video autoplay muted loop class="project-video">
+                    <source src="videos/Tropical Tac Toe.mp4" type="video/mp4">
+                </video>
+                <div class="project-content">
+                    <h2 class="project-title">Tropical Tac Toe</h2>
+                    <img src="images/TropicalTacToeCover.png" style="border-radius: 25%;" alt="Tropical Tac Toe" class="project-logo">
+                    <p class="project-description">A small project that I developed over 4 days to demonstrate the Minimax AI algorithm in a Unity game.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Dunnatello/TropicalTacToe" class="button">🤖 Repository</a>
+                        <a href="https://dunnatello.itch.io/tropicaltactoe" class="button">🎮 Itch.io</a>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-        <div class="projectElement">
-
-            <div class="dropShadowDiv">
-                <img class="projectDiv" src="images/Tropical Tac Toe Graph.png" width="750">
-            </div>
-
-            <p><i>Tropical Tac Toe</i> is a small project that I developed over the course of 4 days. This project demonstrates the Minimax AI algorithm in a Unity game.</p>
-        </div>
-
-        <div class="containerDiv">
-
-            <video autoplay muted loop class="videoBackground">
-                <source src="videos/Asteroid Crashers Background.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <h2 class="blackTransparentBackground">Asteroid Crashers</h2>
-            <div class="dropShadowDiv">
-                <img src="images/AsteroidCrashersIcon.png" style="width: 256px;">
-            </div>
-            <div class="blackTransparentBackground">
-                <div class="buttonList">
-                    <div class="button" style=" background: rgb(156,39,176); background: linear-gradient(315deg, rgba(156,39,176,1) 0%, rgba(106,27,154,1) 100%);">
-                        <a href="https://github.com/Dunnatello/AsteroidCrashers/" class="buttonLink"><span>🤖 Repository</span></a>
+            <!-- Asteroid Crashers -->
+            <div class="project-card">
+                <video autoplay muted loop class="project-video">
+                    <source src="videos/Asteroid Crashers Background.mp4" type="video/mp4">
+                </video>
+                <div class="project-content">
+                    <h2 class="project-title">Asteroid Crashers</h2>
+                    <img src="images/AsteroidCrashersIcon.png" alt="Asteroid Crashers" class="project-logo">
+                    <p class="project-description">A game designed for my Secure Software Engineering university course demonstrating how an anti-cheat system can be implemented into a Unity game.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Dunnatello/AsteroidCrashers/" class="button">🤖 Repository</a>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-        <div class="projectElement">
-            <div class="dropShadowDiv">
-                <img class="projectDiv" src="images/AsteroidCrashersGraph.png" width="750">
-            </div>
-
-            <p><i>Asteroid Crashers</i> is a game designed by myself along with my other group members for our Secure Software Engineering university course. This project demonstrates how an anti-cheat system can be implemented into a Unity game.</p>
-        </div>
-
-        <div class="containerDiv visionsBackground">
-
-
-            <h2 class="blackTransparentBackground">Visions</h2>
-            <div class="dropShadowDiv">
-                <img src="images/Visions icon.png" style="width: 256px;">
-            </div>
-            <div class="blackTransparentBackground">
-                <div class="buttonList">
-                    <div class="button" style="background: rgb(255,152,0); background: linear-gradient(315deg, rgba(255,152,0,1) 0%, rgba(239,108,0,1) 100%);">
-                        <a href="https://github.com/Dunnatello-DifferentFusion/Visions" class="buttonLink"><span>🤖 Repository</span></a>
+            <!-- Visions -->
+            <div class="project-card">
+                <img src="images/Visions Garden.png" class="project-video" />
+                <div class="project-content">
+                    <h2 class="project-title">Visions</h2>
+                    <img src="images/Visions icon.png" alt="Visions" class="project-logo">
+                    <p class="project-description">A game designed for my Advanced Game & Simulation Development course demonstrating ballistic weapon physics in an endless zombie shooter Unity game.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Dunnatello-DifferentFusion/Visions" class="button">🤖 Repository</a>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-        <div class="projectElement">
-
-            <div class="dropShadowDiv">
-                <img class="projectDiv" src="images/Visions Graph.png" width="750">
-            </div>
-
-            <p><i>Visions</i> is a game designed by myself and my friend for our Advanced Game & Simulation Development course. This project demonstrates ballistic weapon physics in a endless zombie shooter Unity game.</p>
-        </div>
-
-
-        <div class="containerDiv burnItUpBackground">
-
-
-            <h2 class="blackTransparentBackground">Burn it Up!</h2>
-            <div class="dropShadowDiv">
-                <img src="images/BurnItUpIcon.png" style="width: 256px;">
-            </div>
-            <div class="blackTransparentBackground">
-                <div class="buttonList">
-                    <div class="button" style="background: rgb(183,28,28); background: linear-gradient(315deg, rgba(183,28,28,1) 0%, rgba(244,67,54,1) 100%);">
-                        <a href="https://github.com/Dunnatello/BurnItUp" class="buttonLink"><span>🤖 Repository</span></a>
+            <!-- Burn it Up -->
+            <div class="project-card">
+                <img src="images/BurnItUpWebsiteGraphic.png" class="project-video" />
+                <div class="project-content">
+                    <h2 class="project-title">Burn it Up!</h2>
+                    <img src="images/BurnItUpIcon.png" alt="Burn it Up" class="project-logo">
+                    <p class="project-description">A weight loss app designed for my Software Engineering Principles course project implemented in Solar2D/Lua.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Dunnatello/BurnItUp" class="button">🤖 Repository</a>
                     </div>
                 </div>
             </div>
-
-
         </div>
+    </main>
 
-        <div class="projectElement">
-
-            <div class="dropShadowDiv">
-                <img class="projectDiv" src="images/BurnItUp Graph.png" width="750">
-            </div>
-            <p><i>Burn it Up!</i> is a weight loss app designed by myself along with my other group members for our Software Engineering Principles course project. In this project, we implemented a weight loss application in Solar2D/Lua.</p>
-
+    <footer class="footer">
+        <div class="container">
+            &copy; 2024 - Dunnatello - <a href="About.html">About</a>
         </div>
-    </div>
+    </footer>
 </body>
-
 </html>
-
-<footer class="border-top footer text-light">
-    <div class="container">
-        &copy; 2024 - Dunnatello - <a href="About.html">About</a>
-    </div>
-</footer>

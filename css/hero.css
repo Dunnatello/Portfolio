@@ -1,0 +1,188 @@
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://dunnatello.com/images/Visions%20Garden.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.7);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(26, 35, 126, 0.9),
+        rgba(13, 71, 161, 0.9)
+    );
+    mix-blend-mode: overlay;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    background: rgba(31, 41, 55, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 2rem auto;
+    box-shadow: 0 0 30px rgba(33, 150, 243, 0.3);
+    border: 4px solid var(--primary-color);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 30px rgba(33, 150, 243, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 50px rgba(33, 150, 243, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(33, 150, 243, 0.3);
+    }
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #2196f3, #00fffa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #e0e7ff;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    color: #9ca3af;
+    margin-bottom: 2rem;
+}
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+}
+
+.feature-section {
+    padding: 6rem 0;
+    background-color: var(--card-background);
+    position: relative;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.feature-card {
+    background: rgba(31, 41, 55, 0.8);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-video {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.feature-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--primary-color), #00fffa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature-description {
+    color: #9ca3af;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .hero-content {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+}
